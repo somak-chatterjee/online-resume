@@ -1,0 +1,59 @@
+<h1>Selected Projects</h1>
+<ul>
+    <li><h2>Energy Consumption Behavior in Workflow Applications</h2></li>
+    <ul>
+        <li><h3>Master Thesis</h3></li>
+        <li>Research project wherein I had attempted to find the trend of energy and power consumption across multiple
+            releases of large scale workflow management systems. For my thesis, I had selected Apache Airflow as my
+            case-study.</li>
+        <li>The idea was to compare the energy consumption between patch and major releases. For this, I ran multiple
+            releases of Airflow and stress-tested them by running multiple workloads. I then measured the power and
+            energy usage of the CPU on the host system.</li>
+        <li>I had also attempted to understand the impact of code refactoring on energy use. To do this, I used an opensource
+            refactoring detection tool (PyRef) to extract the refactorings to Airflow’s codebase, built two versions of
+            the same (one with the refactoring and one without) and repeated the process of stress-testing the two
+            versions and measuring the power and energy use.</li>
+    </ul>
+    <hr>
+    <li><a href="https://github.com/BartvanderWoude/RUG_MachineLearning_Group04"><h2>Breast Cancer Classification using CNNs</h2></a></li>
+    <ul>
+        <li><h3>Project for Machine Learning Course for the University of Groningen</h3></li>
+        <li>This project was created to implement a simple Convoluted Neural Network and train it for classification of
+            breast cancer cells as malignant or benign.</li>
+        <li>The CNN model was created and designed using the PyTorch library and x-ray mammogram images from the
+            CBIS-DDSM: Breast Cancer Image Dataset was used as the dataset on which the model was trained and tested.</li>
+        <li>The performance of the CNN was then compared with previous models that were used for classification on the
+            same dataset.</li>
+    </ul>
+    <hr>
+    <li><a href="https://github.com/rug-sc/2023_group_08_s3328910_s4913531_s5351251"><h2>Predictive Maintenance Application using Apache Spark</h2></a></li>
+    <ul>
+        <li><h3>Project for Scalable Computing Course for the University of Groningen</h3></li>
+        <li>A simple web-application for carrying out predictive maintenance application which would monitor the status
+            of different components of machinery and inform the user which parts needed maintenance and/or replacing.</li>
+        <li>TThe application uses a csv file containing data about different parts. This is then converted to a json file and
+            stored in a MongoDB database</li>
+        <li>The application then splits the data set for training and testing the predicitive model. The training data is split
+            into batches and each batch is divided into n subsets by the machine ID. Each batch is assigned to a worker on
+            Apache Spark. The subsets are processed using Map/Reduce and the metrics for each subset is mapped to the
+            corresponding machine ID and reduced. After this, the subsets are joined together.</li>
+        <li>A simple logistic regression is used for the predictive model and tested on the dataframe created in the
+            previous step. The test data is then streamed to Spark as an input and the predictions are hosted on a Flaskbased
+            web application.</li>
+    </ul>
+    <hr>
+        <li><a href="https://github.com/rug-wacc/2022_group_4_s5351251_s5381541_s3167895"><h2>Interior Design Application (CID)</h2></a></li>
+    <ul>
+        <li><h3>Project for Web and Cloud Computing Course for the University of Groningen</h3></li>
+        <li>Project which created CID, a web application to connect clients and designers and allow them to work on
+            projects in a real-time collaborative 3D editor. Clients and designers can create profiles through the web
+            application. Then, the client can create a project and propose it to a designer.</li>
+        <li>The front-end of the application was created using SvelteJS as the framework for building the single-page
+            application. Along with using Tailwind CSS for creating class-based CSS components, Axios HTTP client was also
+            used for accessing the backend API asynchronously as well as well as using Three.js, a Javascript Library for 3Drendering.</li>
+        <li>The backend makes use of the following tools and frameworks: Nodejs for backend API implementation,
+            MongoDB for data storage, Redis for caching live editing session data , RabbitMQ for queuing the same and
+            Nginx for serving the front-end and load balancing the front-end and APIs</li>
+    </ul>
+    <hr>
+</ul>
